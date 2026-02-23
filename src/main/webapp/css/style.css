@@ -1,0 +1,47 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21 de fev. de 2026, 23:44:46
+    Author     : Usuario
+*/
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+}
+
+/* HEADER FIXO NO TOPO */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Centraliza o formulário */
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px; /* espaço para não ficar atrás do header */
+}
+
+form {
+    background: white;
+    padding: 40px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
