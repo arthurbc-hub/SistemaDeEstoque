@@ -1,4 +1,4 @@
-/*
+  /*
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
 */
@@ -9,8 +9,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 body {
     height: 100vh;
     background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display:flex;
+    justify-content:center
 }
 
+input:focus{
+    border-color:var(--primary-medium);
+    outline:none;
+    box-shadow:0 0 5px var(--primary-medium);    
+}
 /* HEADER FIXO NO TOPO */
 header {
     position: fixed;
@@ -44,4 +51,23 @@ form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+button{
+    width:100%;
+    padding:10px;
+    backgroud-color:var(--sucess);
+    border:none;
+    border-radius: 5px;
+    color:var(--white);
+    front-size:15px;
+    font-weight: 15px;
+    cursr:pointer;
+    transition:0.3s;
+    
+}
+button:hover{
+    background-color: var(--success-hover);
+}
+@media(min-width:300px){
+    
 }

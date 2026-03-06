@@ -29,7 +29,7 @@ public class ConnectionFactory {
                 System.out.println("Banco de dados não conectado");
                 e.printStackTrace();
             }
-            
+                
             return con;
              
         }
