@@ -1,0 +1,134 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package model;
+
+/**
+ *
+ * @author 232.999257
+ */
+public class CadastroUsuarioModel {
+    private int id;
+    private String nome;
+    private String sobrenome;
+    private String cpf;
+    private long cep;
+    private String endereço;
+    private String estado;
+    private String bairro;
+    private String cidade;
+    private long numero;
+    private String complemento;
+    private String NomeUsuario;
+    private String senha;
+    private String funçao;
+    
+    public CadastroUsuarioModel(){
+        
+    }
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public long getCep() {
+        return cep;
+    }
+
+    public void setCep(long cep) {
+        this.cep = cep;
+    }
+
+    public String getEndereço() {
+        return endereço;
+    }
+
+    public void setEndereço(String endereço) {
+        this.endereço = endereço;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public long getNumero() {
+        return numero;
+    }
+
+    public void setNumero(long numero) {
+        this.numero = numero;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
+    }
+
+    public String getNomeUsuario() {
+        return NomeUsuario;
+    }
+
+    public void setNomeUsuario(String NomeUsuario) {
+        this.NomeUsuario = NomeUsuario;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public String getFunçao() {
+        return funçao;
+    }
+
+    public void setFunçao(String funçao) {
+        this.funçao = funçao;
+    }
+    
+}
+  
