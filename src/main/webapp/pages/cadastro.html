@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/reset.css"/>
+        <link rel="stylesheet" href="../css/color.css"/>
+        <link rel="stylesheet" href="../css/cadastro.css"/>
+        <title>cadastro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <<body>
+    <header id="header">
+           <h1 id="tituloDashboard">Sistema de estoque</h1>
+        <nav>
+            <ul>
+               <li><a href="#">Inicio</a></li>
+               <li><a href="#">Gerenciamento</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <form action="/cadastro" method="POST">
+            <div class="container">
+                <div class="dadosPessoais">
+                    <label for="namefirst">Nome</label>
+                    <input type="text" name="namefirst" placeholder="Digite seu nome"/>
+                    <label for="sobrenome">sobrenome</label>
+                    <input type="text" name="sobrenome" placeholder="Digite seu sobrenome"/>
+                    <label for="matricula">matricula</label>
+                    <input type="text" name="matricula" placeholder="Digite sua matricula"/>
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" placeholder="Digite seu CPF"/>
+                    <p>Sexo</p>
+                    <select>
+                        <option value="">Selecione o sexo</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                    </select>
+                    <label for="dtaNascimento">data de nascimento</label>
+                    <input type="date" name="dtaNascimento" id="dtaNascimento"/>
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" placeholder="xxx@xxxx.xx.xx"/>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(00)0 0000-0000"/>
+                    <label for="funcao">Função</label>
+                    <input type="text" name="funcao" id="funcao" placeholder="digite sua função">
+                </div>
+                <div class="containerEndereco">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep"/>
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" id="endereco"/>
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado"/>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade"/>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro"/>
+                    <label for="numero">Numero</label>
+                    <input type="text" name="numero" id="numero"/>
+                    <label for="complemento">complemento</label>
+                    <input type="text" name="complemento" id="complemento"/>         
+                </div>
+                <div class="btn">
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </form> 
+    </main>
+    </body>
+</html>
