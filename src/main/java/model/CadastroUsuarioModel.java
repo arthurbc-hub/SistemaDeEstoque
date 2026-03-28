@@ -13,11 +13,13 @@ public class CadastroUsuarioModel {
     private String nome;
     private String sobrenome;
     private String cpf;
+    private String sexo;
     private long cep;
     private String endereço;
     private String estado;
     private String bairro;
     private String cidade;
+    
     private long numero;
     private String complemento;
     private String NomeUsuario;
@@ -84,6 +86,14 @@ public class CadastroUsuarioModel {
 
     public String getCidade() {
         return cidade;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
 
     public void setCidade(String cidade) {
