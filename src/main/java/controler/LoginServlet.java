@@ -11,32 +11,29 @@ import java.io.IOException;
 import model.UserModel;
 
 @WebServlet("/login")
-public class LoginServlet extends HttpServlet{
-    
+public class LoginServlet extends HttpServlet {
+
     protected void doPost(
             HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         String usuario = request.getParameter("users");
         String senha = request.getParameter("passw");
-        
+
         UserModel userModel = new UserModel();
         userModel.setUsername(usuario);
         userModel.setPassword(senha);
-        
+
         UserDAO dao = new UserDAO();
-        
-        if(dao.validarLogin(userModel)) {
-            HttpSession session =
-                    request.getSession();
-            
+
+        if (dao.validarLogin(userModel)) {
+            HttpSession session = request.getSession();
             session.setAttribute("usuario", usuario);
-            
-            response.sendRedirect("/pages/dashboard.html");
-        }else{
-            response.sendRedirect("index.html");
+            // CORRIGIDO: era "/pages/dashboard.html" (caminho absoluto quebrado)
+            response.sendRedirect(request.getContextPath() + "/pages/dashboard.html");
+        } else {
+            response.sendRedirect(request.getContextPath() + "/index.html");
         }
     }
-    
 }
