@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/color.css" />
+     <link rel="stylesheet" href="../css/cadastoProdutos.css" />
+    <title>Cadastro de Produto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="tituloDashboard">Sistema de Estoque</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Gerenciamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="form-container">
+            <form action="../pages/cadastro.html" method="post" id="FormCadastro">
+                <div class="linhas-form">
+                    <label>Codigo De barras</label>
+                    <input type="text" name="codigoBarras" required />
+                </div>
+                <div class="linhas-form">
+                    <label>Nome do Produto</label>
+                    <input type="text" name="nomeProduto" required />
+                </div>
+                <div class="linhas-form">
+                    <label>Fabricante</label>
+                    <input type="text" name="fabricante" required />
+                </div>
+                <div class="linhas-form">
+                    <label>Marca</label>
+                    <input type="text" name="marca" required />
+                </div>
+                <div class="linhas-form">
+                    <label>Data de Fabricação</label>
+                    <input type="date" name="dataFabricacao" required />
+                </div>
+                <div class="linhas-form">
+                    <label>Data de Vencimento</label>
+                    <input type="date" name="dataVencimento" required />
+                </div>
+                <div class="linhas-form">
+                    <label>Quantidade</label>
+                    <input type="number" name="quantidade" required />
+                </div>
+                <div class="grupo-form">
+                    <label>Valor unitario</label>
+                    <input type="number" name="valor" required />
+                </div>
+                <div class="linha-form">
+                    <div class="grupo-form full">
+                        <label>Total</label>
+                        <input type="number" name="total" required />
+                    </div>
+                </div>
+                <div class="acoes-form">
+                    <button type="submit" class="btn-salvar">Salvar</button>
+                    <a href="dashboard.html" class="btn-cancelar">Cancelar</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="../Js/cadastroProdutos.js"></script>
+</body>
+
+</html>
