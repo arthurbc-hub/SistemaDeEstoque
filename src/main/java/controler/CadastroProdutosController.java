@@ -10,6 +10,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import model.CadastroProdutoModel;
 
 /**
@@ -19,7 +20,7 @@ import model.CadastroProdutoModel;
 @WebServlet("/cadastroProdutos")
 public class CadastroProdutosController extends HttpServlet{
 
-    public void doPost(HttpServletRequest request,HttpServletResponse response ){
+    public void doPost(HttpServletRequest request,HttpServletResponse response )
         throws ServletException,IOException{
         CadastroProdutoModel produto = new CadastroProdutoModel();
         produto.setCodigoBarras(request.getParameter("codigoBarras"));
@@ -35,7 +36,7 @@ public class CadastroProdutosController extends HttpServlet{
          CadastroProdutoDAO dao = new  CadastroProdutoDAO();
          
          if(dao.salvar(produto)){
-             response.sendRedirect("../pages/dashboard.html");
+             response.sendRedirect("/pages/dashboard.html");
     
          }else{
              response.sendRedirect("pages/cadastroProdutos");
